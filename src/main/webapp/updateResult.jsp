@@ -1,0 +1,78 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Update Result</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+    }
+
+    form {
+        width: 300px;
+        margin: 50px auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    /* Updated Button Styles */
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;  /* Same blue color as the image */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3; /* Slightly darker blue on hover */
+    }
+</style>
+</head>
+<body>
+    <h2>Update Result</h2>
+    <form action="UpdateResultServlet" method="post">
+        <input type="hidden" name="resultCode" value="${param.resultCode}">
+
+        <label>Credit Points:</label>
+        <input type="number" name="creditPoints" value="${param.creditPoints}" required><br><br>
+
+        <label>Grade:</label>
+        <input type="text" name="grade" value="${param.grade}" required><br><br>
+
+        <label>User Name:</label>
+        <input type="text" name="userName" value="${param.userName}" required><br><br>
+
+        <input type="submit" value="Update">
+    </form>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
+ 
+ <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+</welcome-file-list>
+ 
+   <servlet>
+    <servlet-name>AdminResultServlet</servlet-name>
+    <servlet-class>com.servlet.AdminResultServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminResultServlet</servlet-name>
+    <url-pattern>/AdminResultServlet</url-pattern>
+  </servlet-mapping>
+  
+ 
+ <servlet>
+    <servlet-name>InsertResultServlet</servlet-name>
+    <servlet-class>com.servlet.InsertResultServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>InsertResultServlet</servlet-name>
+    <url-pattern>/InsertResultServlet</url-pattern>
+</servlet-mapping>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  <servlet>
+    <description></description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    	<servlet-name>customerInsert</servlet-name>
+    	<servlet-class>com.servlet.customerInsert</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>customerInsert</servlet-name>
+    	<url-pattern>/customerInsert</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+		<servlet-name>UpdateCustomerServlet</servlet-name>
+		<servlet-class>com.servlet.UpdateCustomerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateCustomerServlet</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>DeleteCustomerServlet</servlet-name>
+		<servlet-class>com.servlet.DeleteCustomerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteCustomerServlet</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+	<!-- ExamPaperInsert Servlet Configuration -->
+  <servlet>
+    <servlet-name>ExamPaperInsert</servlet-name>
+    <servlet-class>com.servlet.ExamPaperInsert</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ExamPaperInsert</servlet-name>
+    <url-pattern>/ExamPaperInsert</url-pattern>
+  </servlet-mapping>
+  
+  <!-- UpdateExamPaperServlet Configuration -->
+  <servlet>
+    <servlet-name>UpdateExamPaperServlet</servlet-name>
+    <servlet-class>com.servlet.UpdateExamPaperServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateExamPaperServlet</servlet-name>
+    <url-pattern>/UpdateExamPaperServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- DeleteExamPaperServlet Configuration -->
+  <servlet>
+    <servlet-name>DeleteExamPaperServlet</servlet-name>
+    <servlet-class>com.servlet.DeleteExamPaperServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteExamPaperServlet</servlet-name>
+    <url-pattern>/DeleteExamPaperServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  <servlet>
+            <servlet-name>updateUserServlet</servlet-name>
+            <servlet-class>com.servlet.updateUserServlet</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>updateUserServlet</servlet-name>
+            <url-pattern>/updateUserServlet</url-pattern>
+        </servlet-mapping>
+	
+	
+
+
+
+
+<servlet>
+            <servlet-name>ExamPaperServlet</servlet-name>
+            <servlet-class>com.servlet.ExamPaperServlet</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>ExamPaperServlet</servlet-name>
+            <url-pattern>/ExamPaperServlet</url-pattern>
+        </servlet-mapping>
+        <!-- admin exampaper -->
+        <servlet>
+            <servlet-name>AdminExamPaperServlet</servlet-name>
+            <servlet-class>com.servlet.AdminExamPaperServlet</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>AdminExamPaperServlet</servlet-name>
+            <url-pattern>/AdminExamPaperServlet</url-pattern>
+        </servlet-mapping>
+
+
+ <servlet>
+            <servlet-name>ExamDetailServlet</servlet-name>
+            <servlet-class>com.servlet.ExamDetailServlet</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>ExamDetailServlet</servlet-name>
+            <url-pattern>/ExamDetailServlet</url-pattern>
+        </servlet-mapping>
+
+
+<servlet>
+            <servlet-name>ResultServlet</servlet-name>
+            <servlet-class>com.servlet.ResultServlet</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>ResultServlet</servlet-name>
+            <url-pattern>/ResultServlet</url-pattern>
+        </servlet-mapping>	
+        
+        
+        
+                <!-- UserLoginServlet Configuration -->
+        <servlet>
+            <servlet-name>UserLoginServlet</servlet-name>
+            <servlet-class>com.servlet.UserLoginServlet</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>UserLoginServlet</servlet-name>
+            <url-pattern>/UserLoginServlet</url-pattern>
+        </servlet-mapping>
+
+        <!-- UserServlet Configuration -->
+        <servlet>
+            <servlet-name>UserServlet</servlet-name>
+            <servlet-class>com.servlet.UserServlet</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>UserServlet</servlet-name>
+            <url-pattern>/UserServlet</url-pattern>
+        </servlet-mapping>
+
+        <!-- Customer Insert Servlet Configuration -->
+        <servlet>
+            <servlet-name>customerInsert</servlet-name>
+            <servlet-class>com.servlet.customerInsert</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>customerInsert</servlet-name>
+            <url-pattern>/customerInsert</url-pattern>
+        </servlet-mapping>
+
+        <!-- Update Customer Servlet Configuration -->
+        <servlet>
+            <servlet-name>UpdateCustomerServlet</servlet-name>
+            <servlet-class>com.servlet.UpdateCustomerServlet</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>UpdateCustomerServlet</servlet-name>
+            <url-pattern>/UpdateCustomerServlet</url-pattern>
+        </servlet-mapping>
+
+        <!-- Delete Customer Servlet Configuration -->
+        <servlet>
+            <servlet-name>DeleteCustomerServlet</servlet-name>
+            <servlet-class>com.servlet.DeleteCustomerServlet</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>DeleteCustomerServlet</servlet-name>
+            <url-pattern>/DeleteCustomerServlet</url-pattern>
+        </servlet-mapping>
+        
+        
+        
+          <servlet>
+            <servlet-name>adminLoginServlet</servlet-name>
+            <servlet-class>com.servlet.adminLoginServlet</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>adminLoginServlet</servlet-name>
+            <url-pattern>/adminLoginServlet</url-pattern>
+        </servlet-mapping>
+
+
+ 
+              <servlet>
+            <servlet-name>adminServlet</servlet-name>
+            <servlet-class>com.servlet.adminServlet</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>adminServlet</servlet-name>
+            <url-pattern>/adminServlet</url-pattern>
+        </servlet-mapping>
+        
+ <!-- Servlet Configuration for UserInsert -->
+  <servlet>
+    <servlet-name>UserInsert</servlet-name>
+    <servlet-class>com.servlet.UserInsert</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>UserInsert</servlet-name>
+    <url-pattern>/UserInsert</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UpdateExamServlet</servlet-name>
+    <servlet-class>com.servlet.UpdateExamServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>UpdateExamServlet</servlet-name>
+    <url-pattern>/UpdateExamServlet</url-pattern>
+</servlet-mapping>
+  
+  <servlet>
+    <servlet-name>InsertExamServlet</servlet-name>
+    <servlet-class>com.servlet.InsertExamServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>InsertExamServlet</servlet-name>
+    <url-pattern>/InsertExamServlet</url-pattern>
+</servlet-mapping>
+  
+</web-app>
+</element>
+
